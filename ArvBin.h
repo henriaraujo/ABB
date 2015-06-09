@@ -15,8 +15,8 @@ int estahVazia(ArvBin* arv);
 ArvBin* criarNoFolha(int item);
 int buscar(ArvBin* arv, int item);
 ArvBin* inserir(ArvBin* arv, int item);
-void preOrdem(ArvBin* arv, void (*f) (int));
-void inOrdem(ArvBin* arv, void (*f) (int));
-void posOrdem(ArvBin* arv, void (*f) (int));
+void preOrdem(ArvBin* arv);
+void inOrdem(ArvBin* arv);
+void posOrdem(ArvBin* arv);
 
 #endif

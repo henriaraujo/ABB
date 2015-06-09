@@ -1,10 +1,6 @@
 #include "ArvBin.h"
 #include<stdio.h>
 
-void imprimir(int item) {
-    printf("%d ", item);
-}
-
 int main() {
     ArvBin *minhaArv = criarArvore();
     minhaArv = inserir(minhaArv, 5);
@@ -12,11 +8,11 @@ int main() {
     minhaArv = inserir(minhaArv, 7);
     minhaArv = inserir(minhaArv, 4);
     minhaArv = inserir(minhaArv, 6);
-    preOrdem(minhaArv, imprimir);
+    preOrdem(minhaArv);
     printf("\n");
-    inOrdem(minhaArv, imprimir);
+    inOrdem(minhaArv);
     printf("\n");
-    posOrdem(minhaArv, imprimir);
+    posOrdem(minhaArv);
 
     if (buscar(minhaArv, 8) == TRUE)
         printf("\nElemento encontrado!\n");

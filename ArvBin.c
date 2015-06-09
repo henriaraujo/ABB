@@ -41,27 +41,27 @@ ArvBin* inserir(ArvBin* arv, int item) {
     return arv;
 }
 
-void preOrdem(ArvBin* arv, void (*f) (int)) {
+void preOrdem(ArvBin* arv) {
     if (arv != NULL) {
-      (*f)(arv->item);
-      preOrdem(arv->sae, f);
-      preOrdem(arv->sad, f);
+      printf("%d ", arv->item);
+      preOrdem(arv->sae);
+      preOrdem(arv->sad);
     }
 }
 
-void inOrdem(ArvBin* arv, void (*f) (int)) {
+void inOrdem(ArvBin* arv) {
     if (arv != NULL) {
-      inOrdem(arv->sae, f);
-      (*f)(arv->item);
-      inOrdem(arv->sad, f);
+      inOrdem(arv->sae);
+      printf("%d ", arv->item);
+      inOrdem(arv->sad);
     }
 }
 
 
-void posOrdem(ArvBin* arv, void (*f) (int)) {
+void posOrdem(ArvBin* arv) {
     if (arv != NULL) {
-      posOrdem(arv->sae, f);
-      posOrdem(arv->sad, f);
-      (*f)(arv->item);
+      posOrdem(arv->sae);
+      posOrdem(arv->sad);
+      printf("%d ", arv->item);
     }
 }
