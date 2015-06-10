@@ -2,8 +2,13 @@
 #include<stdio.h>
 
 int main() {
-    ArvBin *minhaArv = criarArvore();
-    minhaArv = inserir(minhaArv, 5);
+    ArvBin *minhaArv = criarNoFolha(2);
+
+    if (estahVazia(minhaArv))
+        printf("Arvore vazia!\n");
+
+
+/*  minhaArv = inserir(minhaArv, 5);
     minhaArv = inserir(minhaArv, 3);
     minhaArv = inserir(minhaArv, 7);
     minhaArv = inserir(minhaArv, 4);
@@ -19,6 +24,7 @@ int main() {
     else
         printf("\nElemento não encontrado!\n");
 
+*/
     return 0;
 }
 

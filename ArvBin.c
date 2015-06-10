@@ -57,7 +57,6 @@ void inOrdem(ArvBin* arv) {
     }
 }
 
-
 void posOrdem(ArvBin* arv) {
     if (arv != NULL) {
       posOrdem(arv->sae);
