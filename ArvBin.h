@@ -18,5 +18,6 @@ ArvBin* inserir(ArvBin* arv, int item);
 void preOrdem(ArvBin* arv);
 void inOrdem(ArvBin* arv);
 void posOrdem(ArvBin* arv);
+int alturaArv(ArvBin* arv);
 
 #endif
