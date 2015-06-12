@@ -68,7 +68,7 @@ void posOrdem(ArvBin* arv) {
 int alturaArv(ArvBin* arv)
 {
     if (arv == NULL)
-        return FALSE;
+        return -1;
     else
     {
         int sae,sad;
